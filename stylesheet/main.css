@@ -1,0 +1,77 @@
+/*
+    By ONANA vital
+    With SCSS
+    Created: 17/04/2024
+*/
+*::-moz-selection {
+  background-color: var(--color);
+  color: #fff;
+}
+*::selection {
+  background-color: var(--color);
+  color: #fff;
+}
+
+/* Variables */
+:root {
+  --font: Figtree, sans-serif;
+  --color: #376c26;
+  --black: #000;
+}
+
+body {
+  font-family: var(--font);
+}
+
+body::-webkit-scrollbar {
+  width: 2px; /* Adjust the width of the scrollbar */
+  background-color: #F5F5F5; /* Set the track color */
+}
+
+/* Target the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Set the thumb color */
+  border-radius: 6px; /* Add rounded corners */
+}
+
+.load {
+  background-color: #fff;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease-in 0.9s;
+}
+
+.load .loader h1 {
+  animation: zoomIn 1s;
+  font-size: 80px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.827);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 900;
+}
+
+#banner {
+  z-index: 800;
+}
+#banner #bigTitle {
+  animation: fadeInDown 1s;
+}
+
+#gallery img {
+  border-radius: 10px;
+  transition: all 0.3s ease-in 0s;
+}
+#gallery img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
